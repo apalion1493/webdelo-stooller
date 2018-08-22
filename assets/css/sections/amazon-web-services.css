@@ -1,0 +1,33 @@
+#amazon-web-services .bg-orange {
+    background:
+            url(../../images/sections/amazon-web-services/lines.svg) repeat-x center center,
+            linear-gradient(45deg, #EEA849, #F46B45 45%, #F46B45 45%)
+}
+
+#amazon-web-services .country-name {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#web-services-features {
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    #amazon-web-services {
+        background:
+                url(../../images/sections/amazon-web-services/lines.svg) repeat-x center center,
+                linear-gradient(to right, transparent 50%, #F46B45 50%);
+
+    }
+}
+
+@media (min-width: 1200px) {
+    #amazon-web-services .country-name {
+        margin-left: -48px;
+    }
+    #amazon-web-services .d-flex-container {
+        padding: 48px;
+    }
+}
