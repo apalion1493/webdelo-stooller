@@ -1007,6 +1007,12 @@ header .navbar-brand {
 }
 
 
+
+@media (max-width: 767px) {
+
+}
+
+
 @media (min-width: 768px) {
     .section {
         height: initial!important;

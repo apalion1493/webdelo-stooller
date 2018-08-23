@@ -2,6 +2,21 @@
     min-height: 320px;
 }
 
+.google-menu-mobil {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .google-menu-mobil {
+        display: block;
+        margin-bottom: -165px;
+    }
+
+    .google-service {
+        display: none !important;
+    }
+}
+
 @media (min-width: 768px) {
     #google-services-directions .container>.row,
     #google-services-places .container>.row,

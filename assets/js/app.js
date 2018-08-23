@@ -8,6 +8,7 @@ if (window.innerWidth >= 768) {
             'url-about',
             'url-project-works',
             'url-intelligent-moving',
+            'url-google-mobil',
             'url-google-services-directions',
             'url-google-services-places',
             'url-google-services-calendar',

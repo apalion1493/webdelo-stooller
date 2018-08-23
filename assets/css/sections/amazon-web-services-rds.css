@@ -30,6 +30,10 @@
     .amazon-web-services-rds__row {
         width: auto;
     }
+
+    .amazon-web-services-rds__padding {
+        padding: 1px !important;
+    }
 }
 
 @media (min-width: 768px) {
