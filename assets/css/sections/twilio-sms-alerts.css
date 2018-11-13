@@ -2,14 +2,20 @@
     display: block;
     height: 100%;
     min-height: 420px;
-    max-width: 420px;
-    background-image: url(../../images/sections/twilio-sms-alerts/IPhone_7_Jet_Black.svg);
+    /*max-width: 420px;*/
+    background-image: url(../../images/sections/twilio-sms-alerts/iPhone_alerts.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
 }
 #twilio-sms-alerts--schema {
     max-height: 50vh;
+}
+
+.twilio-sms-alerts__img-shema img {
+    max-width: 100%;
+    height: auto;
+    width: 458px;
 }
 
 @media (min-width: 1200px) {

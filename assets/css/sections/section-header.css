@@ -36,6 +36,21 @@
     .fp-viewing-url-section-header #header .stooller-logo {
         color: #fff;
     }
+
+
+
+    .fp-viewing-url-stooller-diagram #header .navbar-brand {
+        border-color: #fff;
+    }
+    .fp-viewing-url-stooller-diagram #header .navbar-brand>img {
+        filter: brightness(0%);
+    }
+    .fp-viewing-url-stooller-diagram #header .navbar-brand>img {
+        filter: brightness(500%);
+    }
+    .fp-viewing-url-stooller-diagram #header .stooller-logo {
+        color: #fff;
+    }
 }
 @media (max-width: 767px) {
     #section-header {

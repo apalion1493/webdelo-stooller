@@ -6,6 +6,10 @@
     display: none;
 }
 
+.google-services-menu__first-title {
+    margin-bottom: 80px;
+}
+
 @media (max-width: 767px) {
     .google-menu-mobil {
         display: block;

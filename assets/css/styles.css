@@ -10,6 +10,7 @@ html, body {
 .h2, h2 {
     text-align: center;
     margin-bottom: 48px;
+    font-weight: normal;
 }
 .h3, h3 {
     margin-bottom: 36px;
@@ -1007,12 +1008,6 @@ header .navbar-brand {
 }
 
 
-
-@media (max-width: 767px) {
-
-}
-
-
 @media (min-width: 768px) {
     .section {
         height: initial!important;
@@ -1027,4 +1022,35 @@ header .navbar-brand {
     .section h2 {
         margin-top: 24px;
     }
+}
+
+@media (min-width: 1024px) {
+    h2, .h2 {
+        font-size: 48px;
+    }
+}
+
+
+#stooller-diagram {
+    min-height: 100vh;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stooller-diagram h2 {
+    color: #ffffff;
+}
+
+.stooller-diagram__sheme {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+}
+
+#stooller-diagram.active svg {
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation-fill-mode: forwards;
 }

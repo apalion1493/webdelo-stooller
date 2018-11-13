@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.339 424.015">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6928d;
+      }
+
+      .cls-10, .cls-2, .cls-7, .cls-8, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 14px;
+      }
+
+      .cls-12, .cls-2, .cls-6 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-11, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #707070;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-10, .cls-11, .cls-3, .cls-4, .cls-5, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke-linecap: square;
+      }
+
+      .cls-5 {
+        stroke: #a79fca;
+      }
+
+      .cls-10, .cls-11, .cls-5, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #353535;
+        font-size: 13px;
+      }
+
+      .cls-7 {
+        stroke: #d9b9e6;
+      }
+
+      .cls-8 {
+        stroke: #fba18d;
+      }
+
+      .cls-9 {
+        stroke: #e6e6e6;
+      }
+
+      .cls-10 {
+        stroke: #dca9e3;
+      }
+
+      .cls-11 {
+        stroke: #f8a5a0;
+      }
+
+      .cls-12 {
+        fill: #333;
+        font-size: 15px;
+      }
+    </style>
+  </defs>
+  <g id="Group_24" data-name="Group 24" transform="translate(2.339)">
+    <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" width="107" height="33" rx="16.5" transform="translate(238)"/>
+    <text id="СТАРТ" class="cls-2" transform="translate(270 24)"><tspan x="0" y="0">СТАРТ</tspan></text>
+    <path id="Line" class="cls-3" d="M55.462,5.5H8.436C3.509,5.5,0,0,0,0" transform="translate(292.617 168.503)"/>
+    <path id="Line-2" data-name="Line" class="cls-3" d="M-290.919,5.5H-8.436C-3.509,5.5,0,0,0,0" transform="translate(291.079 197.503)"/>
+    <path id="Line_Copy_5" data-name="Line Copy 5" class="cls-4" d="M1.5.5V308.515" transform="translate(290 113)"/>
+    <path id="Line_Copy_5-2" data-name="Line Copy 5" class="cls-4" d="M1.5.5V70.371" transform="translate(173 214)"/>
+    <path id="Line_Copy_6" data-name="Line Copy 6" class="cls-4" d="M102.53,1H0" transform="translate(186 295)"/>
+    <path id="Line_Copy_7" data-name="Line Copy 7" class="cls-3" d="M55.5,1H0" transform="translate(293 339)"/>
+    <path id="Line_Copy_5-3" data-name="Line Copy 5" class="cls-3" d="M1.5.5v55" transform="translate(290 32)"/>
+    <circle id="Oval_6" data-name="Oval 6" class="cls-5" cx="11.5" cy="11.5" r="11.5" transform="translate(280 89)"/>
+    <text id="Изменена_дата" data-name="Изменена дата" class="cls-6" transform="translate(177.5 169)"><tspan x="-31.719" y="0">Изменена </tspan><tspan x="-12.835" y="13">дата</tspan></text>
+    <text id="Отказ_или_перевозчик" data-name="Отказ или перевозчик" class="cls-6" transform="translate(121 313)"><tspan x="22.739" y="14">Отказ или </tspan><tspan x="17.299" y="27">перевозчик</tspan><tspan x="20.698" y="40">больше не </tspan><tspan x="24.596" y="53">подходит</tspan></text>
+    <circle id="Oval_6-2" data-name="Oval 6" class="cls-7" cx="11.5" cy="11.5" r="11.5" transform="translate(163 191)"/>
+    <circle id="Oval_6-3" data-name="Oval 6" class="cls-8" cx="11.5" cy="11.5" r="11.5" transform="translate(163 284)"/>
+    <circle id="Oval_6-4" data-name="Oval 6" class="cls-9" cx="11.5" cy="11.5" r="11.5" transform="translate(352 328)"/>
+    <circle id="Oval_6_Copy" data-name="Oval 6 Copy" class="cls-10" cx="11.5" cy="11.5" r="11.5" transform="translate(58 191)"/>
+    <circle id="Oval_6-5" data-name="Oval 6" class="cls-11" cx="11.5" cy="11.5" r="11.5" transform="translate(351 162)"/>
+    <text id="Принято" class="cls-12" transform="translate(314 108)"><tspan x="0" y="0">Принято</tspan></text>
+    <text id="Отказ" class="cls-12" transform="translate(382 181)"><tspan x="0" y="0">Отказ</tspan></text>
+    <text id="И_другое_" data-name="И другое …" class="cls-12" transform="translate(382 347)"><tspan x="0" y="0">И другое …</tspan></text>
+    <text id="Изменено_кол-во_веще" data-name="Изменено кол-во веще" class="cls-6" transform="translate(69.5 170)"><tspan x="-30.44" y="0">Изменено</tspan><tspan x="-41.472" y="13">кол-во вещей</tspan></text>
+  </g>
+</svg>

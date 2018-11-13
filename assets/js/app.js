@@ -8,7 +8,6 @@ if (window.innerWidth >= 768) {
             'url-about',
             'url-project-works',
             'url-intelligent-moving',
-            'url-google-mobil',
             'url-google-services-directions',
             'url-google-services-places',
             'url-google-services-calendar',
@@ -18,7 +17,8 @@ if (window.innerWidth >= 768) {
             'url-stripe-payments',
             'url-amazon-web-services',
             'url-amazon-web-services-mailing',
-            'url-amazon-web-services-rds'
+            'url-amazon-web-services-rds',
+            'url-stooller-diagram'
         ],
         navigation: false,
         navigationPosition: 'right',
@@ -127,6 +127,7 @@ function googleServices(nextIndex, direction) {
 
 function amazonServices(nextIndex, direction) {
     if ( nextIndex >= 11 ) {
+
         if ( nextIndex === 12 && direction === 'down' ) {
             $('.amazon-web-services-menu').animate({ top: '50%' }, 50, function () {
                 $(this).addClass('active');
@@ -138,8 +139,22 @@ function amazonServices(nextIndex, direction) {
             });
         }
 
+        if ( nextIndex === 15 && direction === 'down' ) {
+            $('.amazon-web-services-menu').animate({top: '-150%'}, 50, function () {
+                $(this).removeClass('active');
+            });
+        }
+
+        if ( nextIndex === 14 && direction === 'up' ) {
+            $('.amazon-web-services-menu').animate({top: '50%'}, 50, function () {
+                $(this).addClass('active');
+            });
+        }
+
+
         $('.amazon-web-services-menu ol li').removeClass('active');
         $( $('.section').eq(nextIndex-1).find('.amazon-service').data('menu-item') ).addClass('active');
         console.log($('.section').eq(nextIndex-1).find('.amazon-service').data('menu-item'));
     }
 }
+
