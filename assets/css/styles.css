@@ -1082,3 +1082,13 @@ header .navbar-brand {
         margin-bottom: 40px;
     }
 }
+
+@media (max-width: 375px) {
+    .figure-caption__block {
+        flex-direction: column;
+    }
+
+    .figure-caption__block .figure-caption__counter {
+        margin-bottom: 15px;
+    }
+}
