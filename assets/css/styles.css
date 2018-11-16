@@ -1054,3 +1054,31 @@ header .navbar-brand {
     transition: opacity 0.5s;
     animation-fill-mode: forwards;
 }
+
+@media (max-width: 767.98px) {
+    #stooller-diagram {
+        display: none;
+    }
+
+    .amazon-web-services-mailing__row,
+    .amazon-web-services-rds__row {
+        width: 111% !important;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1410px) {
+    .google-services-menu {
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .google-services-menu {
+        width: 35%;
+    }
+
+    .google-services-menu__first-title {
+        margin-bottom: 40px;
+    }
+}

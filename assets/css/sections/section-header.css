@@ -66,3 +66,9 @@
         display: none;
     }
 }
+
+@media (max-width: 375px) {
+    .stooller-logo {
+        font-size: 14px !important;
+    }
+}

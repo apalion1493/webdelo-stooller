@@ -17,20 +17,58 @@
     font-size: 2.4rem;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 @media (min-width: 992px) {
     #intelligent-moving .figure--inline {
         padding: 36px 24px;
     }
-    #intelligent-moving:before {
-        content: "";
+
+    /*#intelligent-moving:before {*/
+        /*content: "";*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*top: 0;*/
+        /*bottom: 24px;*/
+        /*background-image: url(../../images/sections/intelligent-moving/macbook.png);*/
+        /*background-position: 20% bottom;*/
+        /*background-size: auto 80%;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
+
+    .intelligent-moving-img {
         position: absolute;
-        left: 0;
+        left: 50px;
         right: 0;
-        top: 0;
         bottom: 24px;
-        background-image: url(../../images/sections/intelligent-moving/macbook.png);
-        background-position: 20% bottom;
-        background-size: auto 80%;
-        background-repeat: no-repeat;
+    }
+
+    .intelligent-moving-img img {
+        max-width: 100%;
+        height: auto;
+        width: 77%;
+    }
+}
+
+@media (max-width: 992px) {
+    .intelligent-moving-img {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    #intelligent-moving .figure--inline {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .intelligent-moving__schedule {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
