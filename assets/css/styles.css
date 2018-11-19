@@ -82,7 +82,7 @@ h2.h1 {
 
 .google-services-menu.active,
 .amazon-web-services-menu.active {
-    top: 50%;
+    top: 40% !important;
     z-index: 1;
     opacity: 1;
     -webkit-transition: 1s;
@@ -106,7 +106,7 @@ h2.h1 {
 }
 .google-services-menu ol.list-of-numeric-items>li.active,
 .amazon-web-services-menu ol.list-of-numeric-items>li.active {
-    height: 160px;
+    height: 250px;
 }
 .google-services-menu ol.list-of-numeric-items>li:before,
 .amazon-web-services-menu ol.list-of-numeric-items>li:before {
@@ -1073,6 +1073,12 @@ header .navbar-brand {
     }
 }
 
+@media (max-width: 1200px) {
+    .google-services-menu, .amazon-web-services-menu {
+        width: 38%;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .google-services-menu {
         width: 35%;
@@ -1080,6 +1086,18 @@ header .navbar-brand {
 
     .google-services-menu__first-title {
         margin-bottom: 40px;
+    }
+
+    ol.list-of-numeric-items p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+
+
+    .google-services-menu ol.list-of-numeric-items>li.active,
+    .amazon-web-services-menu ol.list-of-numeric-items>li.active {
+        height: 230px;
     }
 }
 
