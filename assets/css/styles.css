@@ -1055,6 +1055,13 @@ header .navbar-brand {
     animation-fill-mode: forwards;
 }
 
+.about-block-img {
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 767.98px) {
     #stooller-diagram {
         display: none;
@@ -1065,7 +1072,6 @@ header .navbar-brand {
         width: 111% !important;
     }
 }
-
 
 @media (min-width: 1200px) and (max-width: 1410px) {
     .google-services-menu {
