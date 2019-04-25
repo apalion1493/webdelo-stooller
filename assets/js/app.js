@@ -18,7 +18,9 @@ if (window.innerWidth >= 768) {
             'url-amazon-web-services',
             'url-amazon-web-services-mailing',
             'url-amazon-web-services-rds',
-            'url-stooller-diagram'
+            'url-stooller-diagram',
+            'url-other-jobs'
+            // 'write-ToUs'
         ],
         navigation: false,
         navigationPosition: 'right',
