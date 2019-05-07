@@ -70,7 +70,7 @@ h2.h1 {
     position: fixed;
     left: 10%;
     margin-top: -183px;
-    width: 25%;
+    width: 24%;
     opacity: 0;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
@@ -106,7 +106,7 @@ h2.h1 {
 }
 .google-services-menu ol.list-of-numeric-items>li.active,
 .amazon-web-services-menu ol.list-of-numeric-items>li.active {
-    height: 250px;
+    height: 276px;
 }
 .google-services-menu ol.list-of-numeric-items>li:before,
 .amazon-web-services-menu ol.list-of-numeric-items>li:before {

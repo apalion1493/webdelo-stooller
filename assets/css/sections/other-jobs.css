@@ -20,8 +20,8 @@
 }
 
 .other-jobs__row .col-6 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .other-jobs__container-img {
@@ -51,6 +51,7 @@
 .other-jobs__container-stooler-img img {
     position: relative;
     top: 5px;
+    padding-top: 100px;
 }
 
 .other-jobs__container-ansy-img {
@@ -74,6 +75,92 @@
 }
 
 #other-jobs .row {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.other-jobs__container-stooler-img img {
+    transition: 0.3s;
+}
+
+.other-jobs__container-stooler-img img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.other-jobs__container-ansy-img {
+    position: relative;
+}
+
+.other-jobs__container-ansy-img img {
+    position: absolute;
+    left: -35px;
+    bottom: -100px;
+}
+
+.other-jobs__padding {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*.other-jobs__container-ansy-img-first,*/
+/*.other-jobs__container-ansy-img-second {*/
+    /*position: absolute;*/
+/*}*/
+
+/*.other-jobs__container-ansy-img-first {*/
+    /*z-index: 2;*/
+    /*left: -35px;*/
+    /*bottom: -100px;*/
+/*}*/
+
+/*.other-jobs__container-ansy-img-second {*/
+    /*z-index: 1;*/
+    /*right: 5px;*/
+    /*bottom: -52px;*/
+/*}*/
+
+@media (max-width: 991.98px) {
+    .other-jobs__container-img {
+        height: 300px;
+    }
+
+    .other-jobs__container-vput-img img {
+        max-width: 200%;
+    }
+
+    .other-jobs__container-stooler-img img {
+        max-width: 150%;
+    }
+
+    .other-jobs__container-ansy-img img {
+        max-width: 120%;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .other-jobs__container-ansy-img img {
+        position: relative;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .other-jobs__container-stooler-img img {
+        margin-left: auto;
+    }
+
+    .other-jobs__container-ansy-img img {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .other-jobs__container-vput-img img {
+        max-width: 270%;
+    }
 }
