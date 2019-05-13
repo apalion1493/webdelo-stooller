@@ -147,6 +147,10 @@
         margin-right: auto;
         left: 0;
     }
+
+    #other-jobs {
+        padding-bottom: 30px; 
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -163,4 +167,5 @@
     .other-jobs__container-vput-img img {
         max-width: 270%;
     }
+
 }

@@ -776,6 +776,329 @@
                         <style>
                             /* VARIABLES */
 
+                            /*#stooller-diagram.active svg {*/
+                                /*--animation-delay: 0.6;*/
+                                /*--animation-duration: 6;*/
+                            /*}*/
+
+                            /*#stooller-diagram svg {*/
+                                /*opacity: 0;*/
+                            /*}*/
+
+                            /*@supports (animation-duration: calc(1 * 1s)) {*/
+                                /*#stooller-diagram.active #SES__logo__image {*/
+                                    /*transform-origin: 529px 731px;*/
+                                    /*animation-name: SESAnimation;*/
+                                    /*animation-duration: 2.4s;*/
+                                    /*animation-iteration-count: infinite;*/
+                                /*}*/
+                                /*#stooller-diagram.active #node-js__logo__caption_o {*/
+                                    /*transform-origin: 40.515px 194.24px;*/
+                                    /*animation-name: nodeRotation;*/
+                                    /*animation-duration: calc(var(--animation-duration) * 1s);*/
+                                    /*animation-iteration-count: infinite;*/
+                                    /*animation-timing-function: linear;*/
+                                /*}*/
+                                /*#stooller-diagram.active #twilio__logo__image {*/
+                                    /*transform-origin: 768px 408px;*/
+                                    /*animation-name: twilioRotation;*/
+                                    /*animation-duration: calc(var(--animation-duration) * 1s);*/
+                                    /*animation-iteration-count: infinite;*/
+                                /*}*/
+                                /*#stooller-diagram.active #EC2__logo__image {*/
+                                    /*transform-origin: 375px 652px;*/
+                                    /*animation-name: EC2Rotation;*/
+                                    /*animation-duration: calc(var(--animation-duration) * 1s);*/
+                                    /*animation-iteration-count: infinite;*/
+                                    /*animation-timing-function: linear;*/
+                                /*}*/
+
+                                /*#stooller-diagram.active path[id*="__logo"] {*/
+                                    /*opacity: 0;*/
+                                    /*stroke: rgba(255, 255, 255, 1);*/
+                                    /*stroke-width: 1;*/
+                                    /*stroke-dasharray: 400;*/
+                                    /*stroke-dashoffset: 400;*/
+                                    /*animation-name: draw;*/
+                                    /*animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
+                                    /*animation-fill-mode: forwards;*/
+                                /*}*/
+
+                                /*#stooller-diagram.active g[id*="connections__line"] {*/
+                                    /*opacity: 0;*/
+                                    /*animation-duration: calc(var(--animation-delay) * 5s);*/
+                                /*}*/
+                                /*#stooller-diagram.active g[id*="connections__bit"] {*/
+                                    /*opacity: 0;*/
+                                    /*animation-name: bitAnimation;*/
+                                    /*animation-duration: calc(var(--animation-delay) * 5s);*/
+                                    /*animation-iteration-count: infinite;*/
+                                /*}*/
+
+                                /*#stooller-diagram.active g[id*="connections__line"],*/
+                                /*#stooller-diagram.active path[id^="Google-Maps__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="Google-Directions__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="Google-Places__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="Google-Calendar__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="GRUNT__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="Bootstrap__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="SES__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="RDS__logo__image"],*/
+                                /*#stooller-diagram.active path[id^="EC2__logo__image"] {*/
+                                    /*animation-name: opacityAnimation;*/
+                                    /*animation-duration: calc(var(--animation-delay) * 1s);*/
+                                    /*animation-fill-mode: forwards;*/
+                                    /*opacity: 0;*/
+                                /*}*/
+
+                                /*#stooller-diagram.active path[id^="laravel__logo"] {*/
+                                    /*animation-delay: 0s;*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #laravel-to-php7__connections__line,*/
+                                /*#stooller-diagram.active path[id^="php7__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 1s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #twilio__logo__image {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 2s + (var(--animation-duration) * 1s));*/
+                                /*}*/
+                                /*#stooller-diagram.active #laravel-to-twilio__connections__line,*/
+                                /*#stooller-diagram.active path[id^="twilio__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 2s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #laravel-to-stripe__connections__line,*/
+                                /*#stooller-diagram.active path[id^="stripe__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 3s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #laravel-to-aws__connections__line,*/
+                                /*#stooller-diagram.active path[id^="aws__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 4s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #aws-to-SES__connections__line,*/
+                                /*#stooller-diagram.active path[id^="SES__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 5s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #aws-to-EC2__connections__line,*/
+                                /*#stooller-diagram.active path[id^="EC2__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 6s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #EC2-to-ubuntu__connections__line,*/
+                                /*#stooller-diagram.active path[id^="ubuntu__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 7s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #aws-to-RDS__connections__line,*/
+                                /*#stooller-diagram.active path[id^="RDS__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 8s);*/
+                                /*}*/
+
+
+                                /*#stooller-diagram.active #RDS-to-MySQL__connections__line,*/
+                                /*#stooller-diagram.active path[id^="MySQL__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 9s);*/
+                                /*}*/
+
+
+                                /*#stooller-diagram.active #REST-to-laravel__connections__bit,*/
+                                /*#stooller-diagram.active #REST-to-laravel__connections__line-from,*/
+                                /*#stooller-diagram.active #REST-to-laravel__connections__line-to,*/
+                                /*#stooller-diagram.active path[id^="REST__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 10s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #ANGULAR-to-REST__connections__bit,*/
+                                /*#stooller-diagram.active #ANGULAR-to-REST__connections__lines,*/
+                                /*#stooller-diagram.active path[id^="ANGULAR__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 11s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #ANGULAR-to-Google__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Google__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 12s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #Google-to-Maps__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Google-Maps__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 13s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #Google-to-Directions__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Google-Directions__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 14s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #Google-to-Places__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Google-Places__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 15s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #Google-to-Calendar__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Google-Calendar__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 16s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #npm-to-ANGULAR__connections__line,*/
+                                /*#stooller-diagram.active path[id^="npm__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 17s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #node-js__logo__caption_o {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 18s + (var(--animation-duration) * 1s));*/
+                                /*}*/
+                                /*#stooller-diagram.active #node-js-to-npm__connections__line,*/
+                                /*#stooller-diagram.active path[id^="node-js__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 18s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #ANGULAR-to-Bootstrap__connections__line,*/
+                                /*#stooller-diagram.active path[id^="Bootstrap__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 19s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #Bootstrap-to-GRUNT__connections__line,*/
+                                /*#stooller-diagram.active path[id^="GRUNT__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 20s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #GRUNT-to-HTML5__connections__line,*/
+                                /*#stooller-diagram.active path[id^="HTML5__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 21s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #GRUNT-to-CSS3__connections__line,*/
+                                /*#stooller-diagram.active path[id^="CSS3__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 22s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #JIRA-to-GitHub__connections__line,*/
+                                /*#stooller-diagram.active #JIRA-to-aws__connections__line,*/
+                                /*#stooller-diagram.active path[id^="JIRA__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 23s);*/
+                                /*}*/
+
+                                /*#stooller-diagram.active #GitHub-to-laravel__connections__line,*/
+                                /*#stooller-diagram.active #GitHub-to-ANGULAR__connections__line,*/
+                                /*#stooller-diagram.active path[id^="GitHub__logo"] {*/
+                                    /*animation-delay: calc(var(--animation-delay) * 24s);*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes bitAnimation {*/
+                                /*0% {*/
+                                    /*transform: translateY(-20px);*/
+                                    /*opacity: 1;*/
+                                /*}*/
+                                /*15% {*/
+                                    /*transform: translateY(50px);*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                                /*49% {*/
+                                    /*transform: translateY(50px) translateX(22px);*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                                /*50% {*/
+                                    /*transform: translateY(50px) translateX(22px);*/
+                                    /*opacity: 1;*/
+                                /*}*/
+                                /*65% {*/
+                                    /*transform: translateY(-20px) translateX(22px);*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                                /*80% {*/
+                                    /*transform: translateY(-20px);*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                                /*100% {*/
+                                    /*transform: translateY(-20px);*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes opacityAnimation {*/
+                                /*from {*/
+                                    /*opacity: 0;*/
+                                /*}*/
+                                /*to {*/
+                                    /*opacity: 1;*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes draw {*/
+                                /*0% {*/
+                                    /*opacity: 0;*/
+                                    /*fill: rgba(0, 0, 0, 0);*/
+                                    /*stroke: rgba(255, 255, 255, 1);*/
+                                /*}*/
+                                /*66% {*/
+                                    /*opacity: 1;*/
+                                    /*stroke-dashoffset: 0;*/
+                                    /*fill: rgba(0, 0, 0, 0);*/
+                                    /*stroke: rgba(255, 255, 255, 1);*/
+                                /*}*/
+                                /*100% {*/
+                                    /*opacity: 1;*/
+                                    /*stroke: rgba(255, 255, 255, 0);*/
+                                    /*stroke-dashoffset: 0;*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes nodeRotation {*/
+                                /*from {*/
+                                    /*transform: rotate(0deg);*/
+                                /*}*/
+                                /*to {*/
+                                    /*transform: rotate(-4320deg);*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes twilioRotation {*/
+                                /*from {*/
+                                    /*transform: rotate(0deg);*/
+                                /*}*/
+                                /*to {*/
+                                    /*transform: rotate(4320deg);*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes EC2Rotation {*/
+                                /*from {*/
+                                    /*transform: rotate(0deg);*/
+                                /*}*/
+                                /*to {*/
+                                    /*transform: rotate(-720deg);*/
+                                /*}*/
+                            /*}*/
+
+                            /*@keyframes SESAnimation {*/
+                                /*0% {*/
+                                    /*transform: scale(1);*/
+                                /*}*/
+                                /*40% {*/
+                                    /*transform: scale(.9);*/
+                                /*}*/
+                                /*45% {*/
+                                    /*transform: scale(.9) rotate(-6deg);*/
+                                /*}*/
+                                /*50% {*/
+                                    /*transform: scale(.9) rotate(6deg);*/
+                                /*}*/
+                                /*55% {*/
+                                    /*transform: scale(.9) rotate(-5deg);*/
+                                /*}*/
+                                /*60% {*/
+                                    /*transform: scale(.9) rotate(5deg);*/
+                                /*}*/
+                                /*70% {*/
+                                    /*transform: scale(.9);*/
+                                /*}*/
+                            /*}*/
+
                             #stooller-diagram.active svg {
                                 --animation-delay: 0.6;
                                 --animation-duration: 6;
@@ -785,31 +1108,53 @@
                                 opacity: 0;
                             }
 
-                            @supports (animation-duration: calc(1 * 1s)) {
+                            @supports ((-webkit-animation-duration: calc(1 * 1s)) or (animation-duration: calc(1 * 1s))) {
                                 #stooller-diagram.active #SES__logo__image {
+                                    -webkit-transform-origin: 529px 731px;
+                                    -ms-transform-origin: 529px 731px;
                                     transform-origin: 529px 731px;
+                                    -webkit-animation-name: SESAnimation;
                                     animation-name: SESAnimation;
+                                    -webkit-animation-duration: 2.4s;
                                     animation-duration: 2.4s;
+                                    -webkit-animation-iteration-count: infinite;
                                     animation-iteration-count: infinite;
                                 }
                                 #stooller-diagram.active #node-js__logo__caption_o {
+                                    -webkit-transform-origin: 40.515px 194.24px;
+                                    -ms-transform-origin: 40.515px 194.24px;
                                     transform-origin: 40.515px 194.24px;
+                                    -webkit-animation-name: nodeRotation;
                                     animation-name: nodeRotation;
+                                    -webkit-animation-duration: calc(var(--animation-duration) * 1s);
                                     animation-duration: calc(var(--animation-duration) * 1s);
+                                    -webkit-animation-iteration-count: infinite;
                                     animation-iteration-count: infinite;
+                                    -webkit-animation-timing-function: linear;
                                     animation-timing-function: linear;
                                 }
                                 #stooller-diagram.active #twilio__logo__image {
+                                    -webkit-transform-origin: 768px 408px;
+                                    -ms-transform-origin: 768px 408px;
                                     transform-origin: 768px 408px;
+                                    -webkit-animation-name: twilioRotation;
                                     animation-name: twilioRotation;
+                                    -webkit-animation-duration: calc(var(--animation-duration) * 1s);
                                     animation-duration: calc(var(--animation-duration) * 1s);
+                                    -webkit-animation-iteration-count: infinite;
                                     animation-iteration-count: infinite;
                                 }
                                 #stooller-diagram.active #EC2__logo__image {
+                                    -webkit-transform-origin: 375px 652px;
+                                    -ms-transform-origin: 375px 652px;
                                     transform-origin: 375px 652px;
+                                    -webkit-animation-name: EC2Rotation;
                                     animation-name: EC2Rotation;
+                                    -webkit-animation-duration: calc(var(--animation-duration) * 1s);
                                     animation-duration: calc(var(--animation-duration) * 1s);
+                                    -webkit-animation-iteration-count: infinite;
                                     animation-iteration-count: infinite;
+                                    -webkit-animation-timing-function: linear;
                                     animation-timing-function: linear;
                                 }
 
@@ -819,19 +1164,26 @@
                                     stroke-width: 1;
                                     stroke-dasharray: 400;
                                     stroke-dashoffset: 400;
+                                    -webkit-animation-name: draw;
                                     animation-name: draw;
+                                    -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
                                     animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
+                                    -webkit-animation-fill-mode: forwards;
                                     animation-fill-mode: forwards;
                                 }
 
                                 #stooller-diagram.active g[id*="connections__line"] {
                                     opacity: 0;
+                                    -webkit-animation-duration: calc(var(--animation-delay) * 5s);
                                     animation-duration: calc(var(--animation-delay) * 5s);
                                 }
                                 #stooller-diagram.active g[id*="connections__bit"] {
                                     opacity: 0;
+                                    -webkit-animation-name: bitAnimation;
                                     animation-name: bitAnimation;
+                                    -webkit-animation-duration: calc(var(--animation-delay) * 5s);
                                     animation-duration: calc(var(--animation-delay) * 5s);
+                                    -webkit-animation-iteration-count: infinite;
                                     animation-iteration-count: infinite;
                                 }
 
@@ -845,62 +1197,76 @@
                                 #stooller-diagram.active path[id^="SES__logo__image"],
                                 #stooller-diagram.active path[id^="RDS__logo__image"],
                                 #stooller-diagram.active path[id^="EC2__logo__image"] {
+                                    -webkit-animation-name: opacityAnimation;
                                     animation-name: opacityAnimation;
+                                    -webkit-animation-duration: calc(var(--animation-delay) * 1s);
                                     animation-duration: calc(var(--animation-delay) * 1s);
+                                    -webkit-animation-fill-mode: forwards;
                                     animation-fill-mode: forwards;
                                     opacity: 0;
                                 }
 
                                 #stooller-diagram.active path[id^="laravel__logo"] {
+                                    -webkit-animation-delay: 0s;
                                     animation-delay: 0s;
                                 }
 
                                 #stooller-diagram.active #laravel-to-php7__connections__line,
                                 #stooller-diagram.active path[id^="php7__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 1s);
                                     animation-delay: calc(var(--animation-delay) * 1s);
                                 }
 
                                 #stooller-diagram.active #twilio__logo__image {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 2s + (var(--animation-duration) * 1s));
                                     animation-delay: calc(var(--animation-delay) * 2s + (var(--animation-duration) * 1s));
                                 }
                                 #stooller-diagram.active #laravel-to-twilio__connections__line,
                                 #stooller-diagram.active path[id^="twilio__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 2s);
                                     animation-delay: calc(var(--animation-delay) * 2s);
                                 }
 
                                 #stooller-diagram.active #laravel-to-stripe__connections__line,
                                 #stooller-diagram.active path[id^="stripe__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 3s);
                                     animation-delay: calc(var(--animation-delay) * 3s);
                                 }
 
                                 #stooller-diagram.active #laravel-to-aws__connections__line,
                                 #stooller-diagram.active path[id^="aws__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 4s);
                                     animation-delay: calc(var(--animation-delay) * 4s);
                                 }
 
                                 #stooller-diagram.active #aws-to-SES__connections__line,
                                 #stooller-diagram.active path[id^="SES__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 5s);
                                     animation-delay: calc(var(--animation-delay) * 5s);
                                 }
 
                                 #stooller-diagram.active #aws-to-EC2__connections__line,
                                 #stooller-diagram.active path[id^="EC2__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 6s);
                                     animation-delay: calc(var(--animation-delay) * 6s);
                                 }
 
                                 #stooller-diagram.active #EC2-to-ubuntu__connections__line,
                                 #stooller-diagram.active path[id^="ubuntu__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 7s);
                                     animation-delay: calc(var(--animation-delay) * 7s);
                                 }
 
                                 #stooller-diagram.active #aws-to-RDS__connections__line,
                                 #stooller-diagram.active path[id^="RDS__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 8s);
                                     animation-delay: calc(var(--animation-delay) * 8s);
                                 }
 
 
                                 #stooller-diagram.active #RDS-to-MySQL__connections__line,
                                 #stooller-diagram.active path[id^="MySQL__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 9s);
                                     animation-delay: calc(var(--animation-delay) * 9s);
                                 }
 
@@ -909,114 +1275,184 @@
                                 #stooller-diagram.active #REST-to-laravel__connections__line-from,
                                 #stooller-diagram.active #REST-to-laravel__connections__line-to,
                                 #stooller-diagram.active path[id^="REST__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 10s);
                                     animation-delay: calc(var(--animation-delay) * 10s);
                                 }
 
                                 #stooller-diagram.active #ANGULAR-to-REST__connections__bit,
                                 #stooller-diagram.active #ANGULAR-to-REST__connections__lines,
                                 #stooller-diagram.active path[id^="ANGULAR__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 11s);
                                     animation-delay: calc(var(--animation-delay) * 11s);
                                 }
 
                                 #stooller-diagram.active #ANGULAR-to-Google__connections__line,
                                 #stooller-diagram.active path[id^="Google__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 12s);
                                     animation-delay: calc(var(--animation-delay) * 12s);
                                 }
 
                                 #stooller-diagram.active #Google-to-Maps__connections__line,
                                 #stooller-diagram.active path[id^="Google-Maps__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 13s);
                                     animation-delay: calc(var(--animation-delay) * 13s);
                                 }
 
                                 #stooller-diagram.active #Google-to-Directions__connections__line,
                                 #stooller-diagram.active path[id^="Google-Directions__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 14s);
                                     animation-delay: calc(var(--animation-delay) * 14s);
                                 }
 
                                 #stooller-diagram.active #Google-to-Places__connections__line,
                                 #stooller-diagram.active path[id^="Google-Places__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 15s);
                                     animation-delay: calc(var(--animation-delay) * 15s);
                                 }
 
                                 #stooller-diagram.active #Google-to-Calendar__connections__line,
                                 #stooller-diagram.active path[id^="Google-Calendar__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 16s);
                                     animation-delay: calc(var(--animation-delay) * 16s);
                                 }
 
                                 #stooller-diagram.active #npm-to-ANGULAR__connections__line,
                                 #stooller-diagram.active path[id^="npm__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 17s);
                                     animation-delay: calc(var(--animation-delay) * 17s);
                                 }
 
                                 #stooller-diagram.active #node-js__logo__caption_o {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 18s + (var(--animation-duration) * 1s));
                                     animation-delay: calc(var(--animation-delay) * 18s + (var(--animation-duration) * 1s));
                                 }
                                 #stooller-diagram.active #node-js-to-npm__connections__line,
                                 #stooller-diagram.active path[id^="node-js__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 18s);
                                     animation-delay: calc(var(--animation-delay) * 18s);
                                 }
 
                                 #stooller-diagram.active #ANGULAR-to-Bootstrap__connections__line,
                                 #stooller-diagram.active path[id^="Bootstrap__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 19s);
                                     animation-delay: calc(var(--animation-delay) * 19s);
                                 }
 
                                 #stooller-diagram.active #Bootstrap-to-GRUNT__connections__line,
                                 #stooller-diagram.active path[id^="GRUNT__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 20s);
                                     animation-delay: calc(var(--animation-delay) * 20s);
                                 }
 
                                 #stooller-diagram.active #GRUNT-to-HTML5__connections__line,
                                 #stooller-diagram.active path[id^="HTML5__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 21s);
                                     animation-delay: calc(var(--animation-delay) * 21s);
                                 }
 
                                 #stooller-diagram.active #GRUNT-to-CSS3__connections__line,
                                 #stooller-diagram.active path[id^="CSS3__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 22s);
                                     animation-delay: calc(var(--animation-delay) * 22s);
                                 }
 
                                 #stooller-diagram.active #JIRA-to-GitHub__connections__line,
                                 #stooller-diagram.active #JIRA-to-aws__connections__line,
                                 #stooller-diagram.active path[id^="JIRA__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 23s);
                                     animation-delay: calc(var(--animation-delay) * 23s);
                                 }
 
                                 #stooller-diagram.active #GitHub-to-laravel__connections__line,
                                 #stooller-diagram.active #GitHub-to-ANGULAR__connections__line,
                                 #stooller-diagram.active path[id^="GitHub__logo"] {
+                                    -webkit-animation-delay: calc(var(--animation-delay) * 24s);
                                     animation-delay: calc(var(--animation-delay) * 24s);
+                                }
+                            }
+
+                            @-webkit-keyframes bitAnimation {
+                                0% {
+                                    -webkit-transform: translateY(-20px);
+                                    transform: translateY(-20px);
+                                    opacity: 1;
+                                }
+                                15% {
+                                    -webkit-transform: translateY(50px);
+                                    transform: translateY(50px);
+                                    opacity: 0;
+                                }
+                                49% {
+                                    -webkit-transform: translateY(50px) translateX(22px);
+                                    transform: translateY(50px) translateX(22px);
+                                    opacity: 0;
+                                }
+                                50% {
+                                    -webkit-transform: translateY(50px) translateX(22px);
+                                    transform: translateY(50px) translateX(22px);
+                                    opacity: 1;
+                                }
+                                65% {
+                                    -webkit-transform: translateY(-20px) translateX(22px);
+                                    transform: translateY(-20px) translateX(22px);
+                                    opacity: 0;
+                                }
+                                80% {
+                                    -webkit-transform: translateY(-20px);
+                                    transform: translateY(-20px);
+                                    opacity: 0;
+                                }
+                                100% {
+                                    -webkit-transform: translateY(-20px);
+                                    transform: translateY(-20px);
+                                    opacity: 0;
                                 }
                             }
 
                             @keyframes bitAnimation {
                                 0% {
+                                    -webkit-transform: translateY(-20px);
                                     transform: translateY(-20px);
                                     opacity: 1;
                                 }
                                 15% {
+                                    -webkit-transform: translateY(50px);
                                     transform: translateY(50px);
                                     opacity: 0;
                                 }
                                 49% {
+                                    -webkit-transform: translateY(50px) translateX(22px);
                                     transform: translateY(50px) translateX(22px);
                                     opacity: 0;
                                 }
                                 50% {
+                                    -webkit-transform: translateY(50px) translateX(22px);
                                     transform: translateY(50px) translateX(22px);
                                     opacity: 1;
                                 }
                                 65% {
+                                    -webkit-transform: translateY(-20px) translateX(22px);
                                     transform: translateY(-20px) translateX(22px);
                                     opacity: 0;
                                 }
                                 80% {
+                                    -webkit-transform: translateY(-20px);
                                     transform: translateY(-20px);
                                     opacity: 0;
                                 }
                                 100% {
+                                    -webkit-transform: translateY(-20px);
                                     transform: translateY(-20px);
                                     opacity: 0;
+                                }
+                            }
+
+                            @-webkit-keyframes opacityAnimation {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
                                 }
                             }
 
@@ -1026,6 +1462,25 @@
                                 }
                                 to {
                                     opacity: 1;
+                                }
+                            }
+
+                            @-webkit-keyframes draw {
+                                0% {
+                                    opacity: 0;
+                                    fill: rgba(0, 0, 0, 0);
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                66% {
+                                    opacity: 1;
+                                    stroke-dashoffset: 0;
+                                    fill: rgba(0, 0, 0, 0);
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    stroke: rgba(255, 255, 255, 0);
+                                    stroke-dashoffset: 0;
                                 }
                             }
 
@@ -1048,53 +1503,130 @@
                                 }
                             }
 
-                            @keyframes nodeRotation {
+                            @-webkit-keyframes nodeRotation {
                                 from {
+                                    -webkit-transform: rotate(0deg);
                                     transform: rotate(0deg);
                                 }
                                 to {
+                                    -webkit-transform: rotate(-4320deg);
                                     transform: rotate(-4320deg);
+                                }
+                            }
+
+                            @keyframes nodeRotation {
+                                from {
+                                    -webkit-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                                to {
+                                    -webkit-transform: rotate(-4320deg);
+                                    transform: rotate(-4320deg);
+                                }
+                            }
+
+                            @-webkit-keyframes twilioRotation {
+                                from {
+                                    -webkit-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                                to {
+                                    -webkit-transform: rotate(4320deg);
+                                    transform: rotate(4320deg);
                                 }
                             }
 
                             @keyframes twilioRotation {
                                 from {
+                                    -webkit-transform: rotate(0deg);
                                     transform: rotate(0deg);
                                 }
                                 to {
+                                    -webkit-transform: rotate(4320deg);
                                     transform: rotate(4320deg);
+                                }
+                            }
+
+                            @-webkit-keyframes EC2Rotation {
+                                from {
+                                    -webkit-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                                to {
+                                    -webkit-transform: rotate(-720deg);
+                                    transform: rotate(-720deg);
                                 }
                             }
 
                             @keyframes EC2Rotation {
                                 from {
+                                    -webkit-transform: rotate(0deg);
                                     transform: rotate(0deg);
                                 }
                                 to {
+                                    -webkit-transform: rotate(-720deg);
                                     transform: rotate(-720deg);
+                                }
+                            }
+
+                            @-webkit-keyframes SESAnimation {
+                                0% {
+                                    -webkit-transform: scale(1);
+                                    transform: scale(1);
+                                }
+                                40% {
+                                    -webkit-transform: scale(.9);
+                                    transform: scale(.9);
+                                }
+                                45% {
+                                    -webkit-transform: scale(.9) rotate(-6deg);
+                                    transform: scale(.9) rotate(-6deg);
+                                }
+                                50% {
+                                    -webkit-transform: scale(.9) rotate(6deg);
+                                    transform: scale(.9) rotate(6deg);
+                                }
+                                55% {
+                                    -webkit-transform: scale(.9) rotate(-5deg);
+                                    transform: scale(.9) rotate(-5deg);
+                                }
+                                60% {
+                                    -webkit-transform: scale(.9) rotate(5deg);
+                                    transform: scale(.9) rotate(5deg);
+                                }
+                                70% {
+                                    -webkit-transform: scale(.9);
+                                    transform: scale(.9);
                                 }
                             }
 
                             @keyframes SESAnimation {
                                 0% {
+                                    -webkit-transform: scale(1);
                                     transform: scale(1);
                                 }
                                 40% {
+                                    -webkit-transform: scale(.9);
                                     transform: scale(.9);
                                 }
                                 45% {
+                                    -webkit-transform: scale(.9) rotate(-6deg);
                                     transform: scale(.9) rotate(-6deg);
                                 }
                                 50% {
+                                    -webkit-transform: scale(.9) rotate(6deg);
                                     transform: scale(.9) rotate(6deg);
                                 }
                                 55% {
+                                    -webkit-transform: scale(.9) rotate(-5deg);
                                     transform: scale(.9) rotate(-5deg);
                                 }
                                 60% {
+                                    -webkit-transform: scale(.9) rotate(5deg);
                                     transform: scale(.9) rotate(5deg);
                                 }
                                 70% {
+                                    -webkit-transform: scale(.9);
                                     transform: scale(.9);
                                 }
                             }
@@ -2912,7 +3444,9 @@
                     <div class="col-sm-12 col-md-6 other-jobs__padding">
                         <div class="other-jobs__container other-jobs__container-vput">
                             <div class="other-jobs__container-img other-jobs__container-vput-img">
-                                <img data-tilt src="assets/images/sections/other-jobs/vput-main-img.png" alt="">
+                                <a class="d-flex justify-content-center" data-tilt href="#">
+                                    <img src="assets/images/sections/other-jobs/vput-main-img.png" alt="">
+                                </a>
                             </div>
 
                             <div class="other-jobs__container-text">
@@ -2926,7 +3460,9 @@
                             <div class="col-12 col-sm-6 other-jobs__padding">
                                 <div class="other-jobs__container other-jobs__container-stooler">
                                     <div class="other-jobs__container-img other-jobs__container-stooler-img">
-                                        <img src="assets/images/sections/other-jobs/stooler-main-img.png" alt="">
+                                        <a  class="w-100" href="#">
+                                            <img src="assets/images/sections/other-jobs/stooler-main-img.png" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="other-jobs__container-text">
@@ -2942,8 +3478,9 @@
                                             <!--<img data-tilt class="other-jobs__container-ansy-img-first"  src="assets/images/sections/other-jobs/ansy-img__first.png" alt="">-->
                                             <!--<img data-tilt class="other-jobs__container-ansy-img-second"  src="assets/images/sections/other-jobs/ansy-img__second.png" alt="">-->
                                         <!--</div>-->
-
-                                        <img data-tilt src="assets/images/sections/other-jobs/ansy-main-img.png" alt="">
+                                        <a class="w-100 d-flex justify-content-center" data-tilt href="#">
+                                            <img src="assets/images/sections/other-jobs/ansy-main-img.png" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="other-jobs__container-text">
