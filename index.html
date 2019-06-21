@@ -1158,19 +1158,20 @@
                                     animation-timing-function: linear;
                                 }
 
-                                /*#stooller-diagram.active path[id*="__logo"] {*/
+                                #stooller-diagram.active path[id*="__logo"] {
                                     /*opacity: 0;*/
-                                    /*stroke: rgba(255, 255, 255, 1);*/
-                                    /*stroke-width: 1;*/
-                                    /*stroke-dasharray: 400;*/
-                                    /*stroke-dashoffset: 400;*/
+                                    opacity: 1;
+                                    stroke: rgba(255, 255, 255, 1);
+                                    stroke-width: 1;
+                                    stroke-dasharray: 400;
+                                    stroke-dashoffset: 400;
                                     /*-webkit-animation-name: draw;*/
                                     /*animation-name: draw;*/
-                                    /*-webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
-                                    /*animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
-                                    /*-webkit-animation-fill-mode: forwards;*/
-                                    /*animation-fill-mode: forwards;*/
-                                /*}*/
+                                    -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
+                                    animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
+                                    -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                                }
 
                                 #stooller-diagram.active g[id*="connections__line"] {
                                     opacity: 0;
