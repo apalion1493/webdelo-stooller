@@ -793,8 +793,8 @@
                                     stroke-width: 1;
                                     stroke-dasharray: 400;
                                     stroke-dashoffset: 400;
-                                    -webkit-animation-name: draw;
-                                    animation-name: draw;
+                                    -webkit-animation-name: testName;
+                                    animation-name: testName;
                                     -webkit-animation-timing-function: linear;
                                     animation-timing-function: linear;
                                     -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
@@ -1108,6 +1108,26 @@
                                     stroke-dashoffset: 0;
                                 }
 
+                            }
+
+                            @keyframes testName {
+                                0% {
+                                    opacity: 0;
+                                }
+
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+
+                            @-webkit-keyframes testName {
+                                0% {
+                                    opacity: 0;
+                                }
+
+                                100% {
+                                    opacity: 1;
+                                }
                             }
 
                             @-webkit-keyframes bitAnimation {
