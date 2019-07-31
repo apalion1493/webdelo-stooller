@@ -785,19 +785,76 @@
                                 opacity: 0;
                             }
 
+                            @-webkit-keyframes opacityAnimation {
+                                0% {
+                                    opacity: 0;
+                                }
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+
+                            @keyframes opacityAnimation {
+                                0% {
+                                    opacity: 0;
+                                }
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+
+                            @-webkit-keyframes draw {
+                                0% {
+                                    opacity: 1;
+                                    fill: rgba(0, 0, 0, 0);
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                66% {
+                                    opacity: 1;
+                                    stroke-dashoffset: 0;
+                                    fill: rgba(0, 0, 0, 0);
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    stroke: rgba(255, 255, 255, 0);
+                                    stroke-dashoffset: 0;
+                                }
+                            }
+
+                            @keyframes draw {
+                                0% {
+                                    opacity: 1;
+                                    fill: rgba(0, 0, 0, 0); /*rgba(0, 0, 0, 0)*/
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                66% {
+                                    opacity: 1;
+                                    stroke-dashoffset: 0;
+                                    fill: rgba(0, 0, 0, 0);
+                                    stroke: rgba(255, 255, 255, 1);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    stroke: rgba(255, 255, 255, 0);
+                                    stroke-dashoffset: 0;
+                                }
+
+                            }
+
                             #stooller-diagram.active path[id*="__logo"] {
-                                opacity: 1;
+                                opacity: 0;
                                 stroke: rgba(255, 255, 255, 1);
                                 stroke-width: 1;
                                 stroke-dasharray: 400;
                                 stroke-dashoffset: 400;
-                                /*-webkit-animation-name: draw;*/
+                                -webkit-animation-name: draw;
                                 animation-name: draw;
-                                /*-webkit-animation-timing-function: linear;*/
+                                -webkit-animation-timing-function: linear;
                                 animation-timing-function: linear;
-                                /*-webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
+                                -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
                                 animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
-                                /*-webkit-animation-fill-mode: forwards;*/
+                                -webkit-animation-fill-mode: forwards;
                                 animation-fill-mode: forwards;
                             }
 
@@ -1050,63 +1107,6 @@
                                     -webkit-animation-delay: calc(var(--animation-delay) * 24s);
                                     animation-delay: calc(var(--animation-delay) * 24s);
                                 }
-                            }
-
-                            @-webkit-keyframes opacityAnimation {
-                                0% {
-                                    opacity: 0;
-                                }
-                                100% {
-                                    opacity: 1;
-                                }
-                            }
-
-                            @keyframes opacityAnimation {
-                                0% {
-                                    opacity: 0;
-                                }
-                                100% {
-                                    opacity: 1;
-                                }
-                            }
-
-                            @-webkit-keyframes draw {
-                                0% {
-                                    opacity: 1;
-                                    fill: rgba(0, 0, 0, 0);
-                                    stroke: rgba(255, 255, 255, 1);
-                                }
-                                66% {
-                                    opacity: 1;
-                                    stroke-dashoffset: 0;
-                                    fill: rgba(0, 0, 0, 0);
-                                    stroke: rgba(255, 255, 255, 1);
-                                }
-                                100% {
-                                    opacity: 1;
-                                    stroke: rgba(255, 255, 255, 0);
-                                    stroke-dashoffset: 0;
-                                }
-                            }
-
-                            @keyframes draw {
-                                0% {
-                                    opacity: 1;
-                                    fill: rgba(0, 0, 0, 0); /*rgba(0, 0, 0, 0)*/
-                                    stroke: rgba(255, 255, 255, 1);
-                                }
-                                66% {
-                                    opacity: 1;
-                                    stroke-dashoffset: 0;
-                                    fill: rgba(0, 0, 0, 0);
-                                    stroke: rgba(255, 255, 255, 1);
-                                }
-                                100% {
-                                    opacity: 1;
-                                    stroke: rgba(255, 255, 255, 0);
-                                    stroke-dashoffset: 0;
-                                }
-
                             }
 
                             @-webkit-keyframes bitAnimation {
