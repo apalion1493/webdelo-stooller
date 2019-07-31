@@ -797,12 +797,15 @@
                                 /*animation-fill-mode: forwards;*/
 
                                 opacity: 0;
-                                stroke: rgba(255,0,0,0.3);
-                                stroke-width: 1;
-                                stroke-dasharray: 400;
-                                stroke-dashoffset: 400;
+                                /*stroke: rgba(255,0,0,0.3);*/
+                                /*stroke-width: 1;*/
+                                /*stroke-dasharray: 400;*/
+                                /*stroke-dashoffset: 400;*/
                                 animation-name: testName;
+                                -webkit-animation-name: testName;
+                                -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
                                 animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
+                                -webkit-animation-fill-mode: forwards;
                                 animation-fill-mode: forwards;
                             }
 
