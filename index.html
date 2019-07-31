@@ -852,10 +852,11 @@
                                 animation-name: draw;
                                 -webkit-animation-timing-function: linear;
                                 animation-timing-function: linear;
-                                -webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
-                                animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
-                                -webkit-animation-fill-mode: forwards;
-                                animation-fill-mode: forwards;
+                                /*-webkit-animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
+                                animation-duration: 5s;
+                                /*animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);*/
+                                /*-webkit-animation-fill-mode: forwards;*/
+                                /*animation-fill-mode: forwards;*/
                             }
 
                             @supports ((-webkit-animation-duration: calc(1 * 1s)) or (animation-duration: calc(1 * 1s))) {
@@ -1184,8 +1185,6 @@
                                     opacity: 0;
                                 }
                             }
-
-
 
                             @-webkit-keyframes nodeRotation {
                                 from {
