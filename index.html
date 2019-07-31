@@ -781,13 +781,13 @@
                                 --animation-duration: 6;
                             }
 
-                            #stooller-diagram svg {
-                                opacity: 0;
-                            }
+                            /*#stooller-diagram svg {*/
+                                /*opacity: 0;*/
+                            /*}*/
 
                             /*@supports ((-webkit-animation-duration: calc(1 * 1s)) or (animation-duration: calc(1 * 1s))) {*/
                             @supports (animation-duration: calc(1 * 1s)) {
-                                #stooller-diagram.active path[id*="__logo"] {
+                                #stooller-diagram.active *[id*="__logo"] {
                                     /*opacity: 0;*/
                                     /*stroke: rgba(255, 255, 255, 1);*/
                                     /*stroke-width: 1;*/
