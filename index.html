@@ -1056,6 +1056,166 @@
                                 }
                             }
 
+                            /* Safari 10.1+ (alternate method) */
+                            @media not all and (min-resolution:.001dpcm) {
+                                @supports (-webkit-appearance:none) {
+                                    #stooller-diagram svg,
+                                    #stooller-diagram.active path[id*="__logo"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active g[id*="connections__bit"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
+                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
+                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
+                                    #stooller-diagram.active path[id^="SES__logo__image"],
+                                    #stooller-diagram.active path[id^="RDS__logo__image"],
+                                    #stooller-diagram.active path[id^="EC2__logo__image"],
+                                    #stooller-diagram.active #GitHub-to-laravel__connections__line,
+                                    #stooller-diagram.active #GitHub-to-ANGULAR__connections__line,
+                                    #stooller-diagram.active path[id^="GitHub__logo"],
+                                    #stooller-diagram.active #JIRA-to-GitHub__connections__line,
+                                    #stooller-diagram.active #JIRA-to-aws__connections__line,
+                                    #stooller-diagram.active path[id^="JIRA__logo"],
+                                    #stooller-diagram.active #GRUNT-to-CSS3__connections__line,
+                                    #stooller-diagram.active path[id^="CSS3__logo"],
+                                    #stooller-diagram.active #GRUNT-to-HTML5__connections__line,
+                                    #stooller-diagram.active path[id^="HTML5__logo"],
+                                    #stooller-diagram.active #Bootstrap-to-GRUNT__connections__line,
+                                    #stooller-diagram.active path[id^="GRUNT__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-Bootstrap__connections__line,
+                                    #stooller-diagram.active path[id^="Bootstrap__logo"],
+                                    #stooller-diagram.active #node-js-to-npm__connections__line,
+                                    #stooller-diagram.active path[id^="node-js__logo"],
+                                    #stooller-diagram.active #Google-to-Places__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Places__logo"],
+                                    #stooller-diagram.active #Google-to-Calendar__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo"],
+                                    #stooller-diagram.active #npm-to-ANGULAR__connections__line,
+                                    #stooller-diagram.active path[id^="npm__logo"],
+                                    #stooller-diagram.active #node-js__logo__caption_o,
+                                    #stooller-diagram.active #REST-to-laravel__connections__bit,
+                                    #stooller-diagram.active #REST-to-laravel__connections__line-from,
+                                    #stooller-diagram.active #REST-to-laravel__connections__line-to,
+                                    #stooller-diagram.active path[id^="REST__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-REST__connections__bit,
+                                    #stooller-diagram.active #ANGULAR-to-REST__connections__lines,
+                                    #stooller-diagram.active path[id^="ANGULAR__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-Google__connections__line,
+                                    #stooller-diagram.active path[id^="Google__logo"],
+                                    #stooller-diagram.active #Google-to-Maps__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Maps__logo"],
+                                    #stooller-diagram.active #Google-to-Directions__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Directions__logo"],
+                                    #stooller-diagram.active path[id^="laravel__logo"],
+                                    #stooller-diagram.active #laravel-to-php7__connections__line,
+                                    #stooller-diagram.active path[id^="php7__logo"],
+                                    #stooller-diagram.active #twilio__logo__image,
+                                    #stooller-diagram.active #laravel-to-twilio__connections__line,
+                                    #stooller-diagram.active path[id^="twilio__logo"],
+                                    #stooller-diagram.active #laravel-to-stripe__connections__line,
+                                    #stooller-diagram.active path[id^="stripe__logo"],
+                                    #stooller-diagram.active #laravel-to-aws__connections__line,
+                                    #stooller-diagram.active path[id^="aws__logo"],
+                                    #stooller-diagram.active #aws-to-SES__connections__line,
+                                    #stooller-diagram.active path[id^="SES__logo"],
+                                    #stooller-diagram.active #aws-to-EC2__connections__line,
+                                    #stooller-diagram.active path[id^="EC2__logo"],
+                                    #stooller-diagram.active #EC2-to-ubuntu__connections__line,
+                                    #stooller-diagram.active path[id^="ubuntu__logo"],
+                                    #stooller-diagram.active #aws-to-RDS__connections__line,
+                                    #stooller-diagram.active path[id^="RDS__logo"],
+                                    #stooller-diagram.active #RDS-to-MySQL__connections__line,
+                                    #stooller-diagram.active path[id^="MySQL__logo"] {
+                                        opacity: 1;
+                                        -webkit-animation-delay: 1s;
+                                        animation-delay: 1s;
+                                    }
+                                }
+                            }
+
+                            /* Safari 6.1-10.0 [not 10.1+] */
+                            @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+                                @media {
+                                    #stooller-diagram svg,
+                                    #stooller-diagram.active path[id*="__logo"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active g[id*="connections__bit"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
+                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
+                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
+                                    #stooller-diagram.active path[id^="SES__logo__image"],
+                                    #stooller-diagram.active path[id^="RDS__logo__image"],
+                                    #stooller-diagram.active path[id^="EC2__logo__image"],
+                                    #stooller-diagram.active #GitHub-to-laravel__connections__line,
+                                    #stooller-diagram.active #GitHub-to-ANGULAR__connections__line,
+                                    #stooller-diagram.active path[id^="GitHub__logo"],
+                                    #stooller-diagram.active #JIRA-to-GitHub__connections__line,
+                                    #stooller-diagram.active #JIRA-to-aws__connections__line,
+                                    #stooller-diagram.active path[id^="JIRA__logo"],
+                                    #stooller-diagram.active #GRUNT-to-CSS3__connections__line,
+                                    #stooller-diagram.active path[id^="CSS3__logo"],
+                                    #stooller-diagram.active #GRUNT-to-HTML5__connections__line,
+                                    #stooller-diagram.active path[id^="HTML5__logo"],
+                                    #stooller-diagram.active #Bootstrap-to-GRUNT__connections__line,
+                                    #stooller-diagram.active path[id^="GRUNT__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-Bootstrap__connections__line,
+                                    #stooller-diagram.active path[id^="Bootstrap__logo"],
+                                    #stooller-diagram.active #node-js-to-npm__connections__line,
+                                    #stooller-diagram.active path[id^="node-js__logo"],
+                                    #stooller-diagram.active #Google-to-Places__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Places__logo"],
+                                    #stooller-diagram.active #Google-to-Calendar__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo"],
+                                    #stooller-diagram.active #npm-to-ANGULAR__connections__line,
+                                    #stooller-diagram.active path[id^="npm__logo"],
+                                    #stooller-diagram.active #node-js__logo__caption_o,
+                                    #stooller-diagram.active #REST-to-laravel__connections__bit,
+                                    #stooller-diagram.active #REST-to-laravel__connections__line-from,
+                                    #stooller-diagram.active #REST-to-laravel__connections__line-to,
+                                    #stooller-diagram.active path[id^="REST__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-REST__connections__bit,
+                                    #stooller-diagram.active #ANGULAR-to-REST__connections__lines,
+                                    #stooller-diagram.active path[id^="ANGULAR__logo"],
+                                    #stooller-diagram.active #ANGULAR-to-Google__connections__line,
+                                    #stooller-diagram.active path[id^="Google__logo"],
+                                    #stooller-diagram.active #Google-to-Maps__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Maps__logo"],
+                                    #stooller-diagram.active #Google-to-Directions__connections__line,
+                                    #stooller-diagram.active path[id^="Google-Directions__logo"],
+                                    #stooller-diagram.active path[id^="laravel__logo"],
+                                    #stooller-diagram.active #laravel-to-php7__connections__line,
+                                    #stooller-diagram.active path[id^="php7__logo"],
+                                    #stooller-diagram.active #twilio__logo__image,
+                                    #stooller-diagram.active #laravel-to-twilio__connections__line,
+                                    #stooller-diagram.active path[id^="twilio__logo"],
+                                    #stooller-diagram.active #laravel-to-stripe__connections__line,
+                                    #stooller-diagram.active path[id^="stripe__logo"],
+                                    #stooller-diagram.active #laravel-to-aws__connections__line,
+                                    #stooller-diagram.active path[id^="aws__logo"],
+                                    #stooller-diagram.active #aws-to-SES__connections__line,
+                                    #stooller-diagram.active path[id^="SES__logo"],
+                                    #stooller-diagram.active #aws-to-EC2__connections__line,
+                                    #stooller-diagram.active path[id^="EC2__logo"],
+                                    #stooller-diagram.active #EC2-to-ubuntu__connections__line,
+                                    #stooller-diagram.active path[id^="ubuntu__logo"],
+                                    #stooller-diagram.active #aws-to-RDS__connections__line,
+                                    #stooller-diagram.active path[id^="RDS__logo"],
+                                    #stooller-diagram.active #RDS-to-MySQL__connections__line,
+                                    #stooller-diagram.active path[id^="MySQL__logo"] {
+                                        opacity: 1;
+                                        -webkit-animation-delay: 1s;
+                                        animation-delay: 1s;
+                                    }
+                                }
+                            }
+
                             @-webkit-keyframes opacityAnimation {
                                 0% {
                                     opacity: 0;
@@ -1317,54 +1477,6 @@
                                 }
                             }
 
-
-                            /* Safari 10.1+ (alternate method) */
-                            @media not all and (min-resolution:.001dpcm) {
-                                @supports (-webkit-appearance:none) {
-                                    #stooller-diagram svg,
-                                    #stooller-diagram.active path[id*="__logo"],
-                                    #stooller-diagram.active g[id*="connections__line"],
-                                    #stooller-diagram.active g[id*="connections__bit"],
-                                    #stooller-diagram.active g[id*="connections__line"],
-                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
-                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
-                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
-                                    #stooller-diagram.active path[id^="SES__logo__image"],
-                                    #stooller-diagram.active path[id^="RDS__logo__image"],
-                                    #stooller-diagram.active path[id^="EC2__logo__image"] {
-                                        opacity: 1;
-                                        -webkit-animation-delay: 1s;
-                                        animation-delay: 1s;
-                                    }
-                                }
-                            }
-
-                            /* Safari 6.1-10.0 [not 10.1+] */
-                            @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-                                @media {
-                                    #stooller-diagram svg,
-                                    #stooller-diagram.active path[id*="__logo"],
-                                    #stooller-diagram.active g[id*="connections__line"],
-                                    #stooller-diagram.active g[id*="connections__bit"],
-                                    #stooller-diagram.active g[id*="connections__line"],
-                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
-                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
-                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
-                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
-                                    #stooller-diagram.active path[id^="SES__logo__image"],
-                                    #stooller-diagram.active path[id^="RDS__logo__image"],
-                                    #stooller-diagram.active path[id^="EC2__logo__image"] {
-                                        opacity: 1;
-                                        -webkit-animation-delay: 1s;
-                                        animation-delay: 1s;
-                                    }
-                                }
-                            }
                         </style>
                         <g id="Canvas" transform="translate(6 -139)">
                             <g id="stooller__how-it-works">
