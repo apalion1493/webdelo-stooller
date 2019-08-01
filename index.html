@@ -1321,8 +1321,21 @@
                             /* Safari 10.1+ (alternate method) */
                             @media not all and (min-resolution:.001dpcm) {
                                 @supports (-webkit-appearance:none) {
-                                    .stooller-diagram__sheme {
-                                        background: red;
+                                    #stooller-diagram svg,
+                                    #stooller-diagram.active path[id*="__logo"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active g[id*="connections__bit"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
+                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
+                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
+                                    #stooller-diagram.active path[id^="SES__logo__image"],
+                                    #stooller-diagram.active path[id^="RDS__logo__image"],
+                                    #stooller-diagram.active path[id^="EC2__logo__image"] {
+                                        opacity: 1;
                                     }
                                 }
                             }
@@ -1330,16 +1343,29 @@
                             /* Safari 6.1-10.0 [not 10.1+] */
                             @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
                                 @media {
-                                    .stooller-diagram__sheme {
-                                        background: red;
+                                    #stooller-diagram svg,
+                                    #stooller-diagram.active path[id*="__logo"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active g[id*="connections__bit"],
+                                    #stooller-diagram.active g[id*="connections__line"],
+                                    #stooller-diagram.active path[id^="Google-Maps__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Directions__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Places__logo__image"],
+                                    #stooller-diagram.active path[id^="Google-Calendar__logo__image"],
+                                    #stooller-diagram.active path[id^="GRUNT__logo__image"],
+                                    #stooller-diagram.active path[id^="Bootstrap__logo__image"],
+                                    #stooller-diagram.active path[id^="SES__logo__image"],
+                                    #stooller-diagram.active path[id^="RDS__logo__image"],
+                                    #stooller-diagram.active path[id^="EC2__logo__image"] {
+                                        opacity: 1;
                                     }
                                 }
                             }
 
                             /* Safari 6.1-7.0 */
                             @media screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0) {
-                                .stooller-diagram__sheme {(;
-                                    background: red;
+                                #stooller-diagram svg {(;
+                                    opacity: 1;
                                 );}
                             }
                         </style>
