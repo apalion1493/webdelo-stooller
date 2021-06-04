@@ -1063,9 +1063,9 @@ header .navbar-brand {
 }
 
 @media (max-width: 767.98px) {
-    #stooller-diagram {
-        display: none;
-    }
+    /*#stooller-diagram {*/
+    /*    display: none;*/
+    /*}*/
 
     .amazon-web-services-mailing__row,
     .amazon-web-services-rds__row {
